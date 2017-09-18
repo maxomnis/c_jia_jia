@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main()
+int main3()
 {
 	//初始化和赋值进行的转换
 	cout.setf(ios_base::fixed, ios_base::floatfield);
