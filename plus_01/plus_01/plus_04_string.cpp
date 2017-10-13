@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int main_4()
+int main33333()
 {
 	const int Size = 15;
 	char name1[Size];
@@ -28,13 +28,18 @@ int main_4()
 	string s1 = "penguin";
 	string s2, s3;
 
-	cout << "you can assign one string object to another :s2 = s1 \ n";
+	cout << "you can assign one string object to another :s2 = s1 \n";
 	s2 = s1;      //string是可以的，所以这里是与char[]类型的字符串的区别
 
 	string str1;
 	string str2 = "panter";
 	str1 = str2;
 	cout << str1 << endl;
+
+	cout << &str1 << endl;   //输出0048FBBC
+	cout << &str2 << endl;   //输出0048FB98   说明str1是str2的副本
+
+
 
 	str1 += " hello ";    //c++的string类型是可以直接相加的
 	cout << "the string " << str1<<endl;

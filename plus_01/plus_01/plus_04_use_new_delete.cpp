@@ -5,7 +5,7 @@
 #include <cstring>
 using namespace std;
 
-int main()
+int main_plus_04_use_new_delete()
 {
 	/*
 	在c语言中，使用库函数malloc()来分配内存，在c+++中仍然可以这么做，但c++还有更好的方法，new运算符
@@ -74,9 +74,15 @@ int main()
 	 在运行阶段需要数组，则创建它，如果不需要，则不创建。还可以在程序运行时选择数组的长度。这种被称为动态编译（
 	 dynamic binding）,意味着数组是在程序运行时创建的。这种数组叫动态数组。使用静态联编时，必须在编写程序时指定
 	 数组的长度，使用动态联编时，程序将在运行时确定数组的长度。
+
+	 我自己的理解：
+	 比如下面的psome[50000]是静态的联编，也就是说从它声明开始，它就一直存在，直到程序死掉；
+	 而下面的int *psome = new int[10]是动态的联编，后面还可以delete掉，所以，这就是区别
 	*/
-	//int psome[50000];
-	int *psome = new int[10]; // get a block of ints
+	//int psome[50000]; //静态联编
+
+
+	int *psome = new int[10]; // 动态联编， get a block of ints
 	//new 运算符返回第一个元素的地址，这个例子中，该地址被赋给psome指针
 
 	delete []psome;   //释放数组，记得那个方括号

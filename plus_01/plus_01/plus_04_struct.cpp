@@ -46,7 +46,7 @@ struct perks2
 };
 
 
-int main()
+int main_04()
 {
 	inflatable guest = 
 	{

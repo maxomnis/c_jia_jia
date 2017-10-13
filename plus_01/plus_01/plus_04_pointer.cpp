@@ -5,7 +5,7 @@
 #include <cstring>
 using namespace std;
 
-int main()
+int main111()
 {
 	int donuts = 6;
 	double cpus = 4.5;
@@ -26,8 +26,10 @@ int main()
 
 	cout << "address:&updates = " << &updates;		//
 	cout << ", p_udpates =" << p_updates << endl;
+	
 	*p_updates = *p_updates + 1;
 	cout << "now updates = " << updates << endl;
+	cout << "*p_updates = " << *p_updates << endl;
 
 	// 一定要在对指针应用解除引用运算符（*）之前，将指针初始化为一个确定的，适当的地址。这是一个关于使用指针的金科玉律
 
