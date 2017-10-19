@@ -10,7 +10,7 @@ using namespace std;
 const int Cities = 5;
 const int Years = 4;
 
-int main()
+int main_for()
 {
 	/*
 	基于范围的for循环（c++ 11）
