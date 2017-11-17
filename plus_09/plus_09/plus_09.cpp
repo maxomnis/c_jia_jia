@@ -4,7 +4,7 @@
 #include "stdafx.h"
 
 
-int main()
+int main_test()
 {
     return 0;
 }
